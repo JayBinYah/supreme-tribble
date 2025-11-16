@@ -1,0 +1,105 @@
+{
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "label": "build:c",
+      "type": "shell",
+      "command": "make",
+      "args": [],
+      "options": {
+        "cwd": "${workspaceFolder}/src/c"
+      },
+      "group": {
+        "kind": "build",
+        "isDefault": true
+      },
+      "problemMatcher": ["$gcc"],
+      "presentation": {
+        "echo": true,
+        "reveal": "always",
+        "focus": false,
+        "panel": "shared",
+        "showReuseMessage": true,
+        "clear": false
+      }
+    },
+    {
+      "label": "run:c",
+      "type": "shell",
+      "command": "make run",
+      "options": {
+        "cwd": "${workspaceFolder}/src/c"
+      },
+      "dependsOn": ["build:c"],
+      "group": "none",
+      "problemMatcher": [],
+      "presentation": {
+        "echo": true,
+        "reveal": "always",
+        "focus": false,
+        "panel": "shared",
+        "showReuseMessage": true,
+        "clear": false
+      }
+    },
+    {
+      "label": "clean",
+      "type": "shell",
+      "command": "make clean",
+      "options": {
+        "cwd": "${workspaceFolder}/src/c"
+      },
+      "group": "none",
+      "problemMatcher": [],
+      "presentation": {
+        "echo": true,
+        "reveal": "always",
+        "focus": false,
+        "panel": "shared",
+        "showReuseMessage": true,
+        "clear": false
+      }
+    },
+    {
+      "label": "test:python",
+      "type": "shell",
+      "command": "python",
+      "args": ["-m", "pytest", "tests/", "-v"],
+      "options": {
+        "cwd": "${workspaceFolder}"
+      },
+      "group": {
+        "kind": "test",
+        "isDefault": true
+      },
+      "problemMatcher": [],
+      "presentation": {
+        "echo": true,
+        "reveal": "always",
+        "focus": false,
+        "panel": "shared",
+        "showReuseMessage": true,
+        "clear": false
+      }
+    },
+    {
+      "label": "run:python",
+      "type": "shell",
+      "command": "python",
+      "args": ["src/python/main.py"],
+      "options": {
+        "cwd": "${workspaceFolder}"
+      },
+      "group": "none",
+      "problemMatcher": [],
+      "presentation": {
+        "echo": true,
+        "reveal": "always",
+        "focus": false,
+        "panel": "shared",
+        "showReuseMessage": true,
+        "clear": false
+      }
+    }
+  ]
+}
