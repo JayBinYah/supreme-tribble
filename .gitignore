@@ -141,3 +141,6 @@ $RECYCLE.BIN/
 src/c/hello_world
 src/c/calculator
 src/c/test_calculator
+
+# Analysis and CI temporary files
+_codeql_detected_source_root
