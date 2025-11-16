@@ -105,3 +105,6 @@ Thumbs.db
 *.swp
 *.swo
 *.swn
+
+# CodeQL
+_codeql_detected_source_root
