@@ -53,3 +53,41 @@ dkms.conf
 
 # debug information files
 *.dwo
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+MANIFEST
+.pytest_cache/
+.coverage
+htmlcov/
+venv/
+env/
+ENV/
+
+# VS Code
+.vscode/settings.json.local
+.vscode/*.log
+
+# C starter project executables
+c-starter/hello
+c-starter/functions
+c-starter/arrays

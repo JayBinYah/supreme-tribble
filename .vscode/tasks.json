@@ -1,0 +1,78 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "build-all-c",
+            "type": "shell",
+            "command": "make",
+            "options": {
+                "cwd": "${workspaceFolder}/c-starter"
+            },
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            },
+            "presentation": {
+                "reveal": "always",
+                "panel": "shared"
+            },
+            "problemMatcher": ["$gcc"]
+        },
+        {
+            "label": "build-hello",
+            "type": "shell",
+            "command": "make",
+            "args": ["hello"],
+            "options": {
+                "cwd": "${workspaceFolder}/c-starter"
+            },
+            "group": "build",
+            "problemMatcher": ["$gcc"]
+        },
+        {
+            "label": "build-functions",
+            "type": "shell",
+            "command": "make",
+            "args": ["functions"],
+            "options": {
+                "cwd": "${workspaceFolder}/c-starter"
+            },
+            "group": "build",
+            "problemMatcher": ["$gcc"]
+        },
+        {
+            "label": "build-arrays",
+            "type": "shell",
+            "command": "make",
+            "args": ["arrays"],
+            "options": {
+                "cwd": "${workspaceFolder}/c-starter"
+            },
+            "group": "build",
+            "problemMatcher": ["$gcc"]
+        },
+        {
+            "label": "clean-c",
+            "type": "shell",
+            "command": "make",
+            "args": ["clean"],
+            "options": {
+                "cwd": "${workspaceFolder}/c-starter"
+            },
+            "group": "build",
+            "problemMatcher": []
+        },
+        {
+            "label": "run-python-current",
+            "type": "shell",
+            "command": "python3",
+            "args": ["${file}"],
+            "group": "test",
+            "presentation": {
+                "reveal": "always",
+                "panel": "shared"
+            },
+            "problemMatcher": []
+        }
+    ]
+}
