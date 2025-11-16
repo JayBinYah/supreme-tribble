@@ -91,3 +91,6 @@ ENV/
 c-starter/hello
 c-starter/functions
 c-starter/arrays
+
+# CodeQL artifacts
+_codeql_detected_source_root
